@@ -1,6 +1,8 @@
+# basic dev things
+/build
+/.vscode
 # Prerequisites
 *.d
-
 # Object files
 *.o
 *.ko
