@@ -11,11 +11,6 @@ sudo make install
 Now the program should be avaialbe everywhere.    
     
 
-To build without installing:
-```
-make
-```
-
 ### Example usage
 Display current disk space:
 ```

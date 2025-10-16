@@ -1,9 +1,3 @@
-# https://medium.com/@schuylertk/a-beginners-guide-to-creating-and-using-makefiles-83f386856aa5
-# https://stackoverflow.com/questions/21548464/how-to-write-a-makefile-to-compile-a-simple-c-program
-# https://stackoverflow.com/questions/8941110/how-i-could-add-dir-to-path-in-makefile
-# https://stackoverflow.com/questions/3915067/what-are-makefiles-make-install-etc
-# https://stackoverflow.com/questions/39892692/how-to-implement-make-install-in-a-makefile
-
 COMPILER = gcc
 SRCDIR = src
 BUILDDIR = build
@@ -14,9 +8,7 @@ SOURCES = $(wildcard $(SRCDIR)/*.c)
 #OBJECTS = build/main.o build/utils.o build/helper.o
 OBJECTS = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SOURCES))
 
-.PHONY: all clean install uninstall
-
-all: $(BUILDDIR) $(TARGET)
+.PHONY: clean install uninstall
 
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
@@ -34,6 +26,7 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.c
 clean:
 	-rm -rf $(BUILDDIR) $(TARGET)
 
+# https://linuxhandbook.com/install-command/
 install: $(TARGET)
 	install -m 755 $(TARGET) $(BINDIR)/$(TARGET)
 
