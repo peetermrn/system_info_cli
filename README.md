@@ -31,7 +31,7 @@ peeter@zbook:~/code/personal/system_info_cli$ ./sys_info -m
 RAM info:
   Total RAM:              33304084480 bytes (31.02 GB)
   Available RAM:          19329126400 bytes (18.00 GB)
-  Used RAM:          13974958080 bytes (13.02 GB)
+  Used RAM:               13974958080 bytes (13.02 GB)
   ```
 
 ### Uninstall
