@@ -19,19 +19,21 @@ make
 ### Example usage
 Display current disk space:
 ```
-peeter@zbook:~/code/personal/system_info_cli$ sys_info -d
+peeter@zbook:~$ sys_info -d
 Disk info:
   Total:            2013991550976 bytes (1875.68 GB)
-  Available:        1771958001664 bytes (1650.26 GB)
-  Used:              139652845568 bytes (130.06 GB)
+  Available:        1762513604608 bytes (1641.47 GB)
+  Used:              149097242624 bytes (138.86 GB)
+
 ```
 Display RAM usage:
 ```
-peeter@zbook:~/code/personal/system_info_cli$ ./sys_info -m
+peeter@zbook:~$ sys_info -m
 RAM info:
-  Total RAM:              33304084480 bytes (31.02 GB)
-  Available RAM:          19329126400 bytes (18.00 GB)
-  Used RAM:               13974958080 bytes (13.02 GB)
+  Total RAM:              33304072192 bytes (31.02 GB)
+  Available RAM:          15601356800 bytes (14.53 GB)
+  Used RAM:               17702715392 bytes (16.49 GB)
+
   ```
 
 ### Uninstall
